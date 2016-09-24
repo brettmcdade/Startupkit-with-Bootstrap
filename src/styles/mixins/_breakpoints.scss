@@ -1,0 +1,18 @@
+@mixin breakpoints() {
+    &:before {
+        content: "mobile";
+        display: none;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        &:before {
+            content: "tablet";
+        }
+    }
+
+    @media (min-width: $screen-md-min) {
+        &:before {
+            content: "desktop";
+        }
+    }
+}

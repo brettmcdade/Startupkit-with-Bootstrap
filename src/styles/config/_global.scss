@@ -1,0 +1,28 @@
+
+// colors
+$c-white         : #ffffff;
+$c-black         : #000000;
+
+
+// font-weights
+$fw-thin       : 100; //thin=100
+$fw-extralight : 200; //extralight=200
+$fw-light      : 300; //light=300
+$fw-normal     : 400; //normal=400
+$fw-regular    : 400; //regular=400
+$fw-medium     : 500; //medium=500
+$fw-semibold   : 600; //semibold=600
+$fw-bold       : 700; //bold=700
+$fw-heavy      : 800; //heavy=800
+$fw-extrabold  : 800; //extrabold=800
+$fw-black      : 900; //black=900
+$fw-ultrabold  : 900; //ultrabold=900
+
+// font-families
+$ff-def  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$ff-fa   : FontAwesome;
+
+// custom variables
+$section-separation-desktop: 80px;
+$section-separation-mobile: 50px;
+$input-height: 52px;

@@ -1,0 +1,70 @@
+{
+  "name": "project",
+  "private": true,
+  "dependencies": {
+    "browserify": "^6.3.3",
+    "browserify-shim": "~3.8.2",
+    "del": "^1.1.1",
+    "fastclick": "^1.0.6",
+    "glob": "^3.2.9",
+    "gulp": "^3.8.8",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-css-url-adjuster": "^0.2.3",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-if": "^1.2.5",
+    "gulp-load-plugins": "^0.7.1",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^1.0.0",
+    "gulp-sourcemaps": "^1.2.2",
+    "gulp-uglify": "^1.0.1",
+    "hammerjs": "^2.0.8",
+    "q": "^1.4.1",
+    "sweetalert": "^1.0.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.0.0",
+    "yargs": "^2.3.0",
+    "z-hook-finder": "^1.0.2"
+  },
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "grunt": "~0.4.5",
+    "grunt-autoprefixer": "^2.0.0",
+    "grunt-browser-sync": "^2.1.3",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-connect": "^0.11.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-delete-sync": "0.0.2",
+    "grunt-includes": "^0.5.1",
+    "grunt-newer": "^1.1.0",
+    "grunt-php": "^1.5.0",
+    "grunt-include-replace": "^4.0.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-file-include": "^0.13.7",
+    "gulp-html-replace": "^1.5.4",
+    "gulp-imagemin": "^2.0.0",
+    "gulp-inline-source": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-shell": "^0.5.0",
+    "gulp-watch": "^4.1.0",
+    "node-notifier": "^4.2.1",
+    "sprity": "^1.0.6",
+    "sprity-sass": "^1.0.4"
+  },
+  "engines": {
+    "node": ">=0.11.0"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "jquery": "global:$"
+  }
+}

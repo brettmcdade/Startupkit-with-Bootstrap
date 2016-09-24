@@ -1,0 +1,95 @@
+
+// Helpers
+
+$media-xs-only: "(max-width: #{$screen-xs-max})";
+$media-sm-only: "(min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})";
+$media-md-only: "(min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max})";
+
+// Base style
+
+html {
+    body {
+        min-width: 320px;
+
+        main {
+            overflow-x: hidden;
+        }
+
+        @include breakpoints();
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    .container,
+    .container-fluid:not(.container-fluid--full) {
+        max-width: $screen-lg-min + $grid-gutter-width;
+        @media #{$media-sm-only} {
+            max-width: $screen-lg-min + $grid-gutter-width*2;
+        }
+    }
+}
+
+.container-fluid:not(.container-fluid--full) {
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+    @media #{$media-sm-only} {
+        padding-left: $grid-gutter-width*2;
+        padding-right: $grid-gutter-width*2;
+    }
+}
+
+[class*="col-"].col--nopadding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+a:focus {
+    outline: none;
+    outline-offset: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+// Mixins by class
+
+.center {
+    @include center();
+}
+.vcenter {
+    @include vcenter();
+}
+.hcenter {
+    @include hcenter();
+}
+
+.imagecover {
+    @include imagecover();
+}
+.imagecover-wrapper {
+    @include imagecover-wrapper();
+}
+
+.clearfix {
+    @include clearfix();
+}
+
+.smooth {
+    @include smooth();
+}
+
+.embed-container {
+    @include embedcontainer();
+}

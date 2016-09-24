@@ -1,0 +1,16 @@
+
+.section {
+    margin: $section-separation-mobile auto 0;
+    @media (min-width: $screen-md-min) {
+        margin: $section-separation-desktop auto 0;
+    }
+
+    position: relative;
+
+    &:only-child {
+        margin-bottom: $section-separation-mobile;
+        @media (min-width: $screen-md-min) {
+            margin-bottom: $section-separation-desktop;
+        }
+    }
+}

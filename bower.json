@@ -1,0 +1,10 @@
+{
+  "name": "project",
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "modernizr": "~2.8.3",
+    "bootstrap-sass": "^3.3.6",
+    "select2": "^4.0.3",
+    "picturefill": "^3.0.2"
+  }
+}
